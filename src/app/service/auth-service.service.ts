@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 export class AuthServiceService {
 
   constructor(private http:HttpClient, private router:Router) { }
-  isUserLoggedIn:boolean = false;
+  isUserLoggedIn:boolean;
   userSignup(data:signUp){
    return this.http.post("http://127.0.0.1:3000/users", data)
   }

@@ -7,12 +7,19 @@ import { AuthServiceService } from './service/auth-service.service';
   providedIn: 'root'
 })
 export class ServiceAuthGuardGuard implements CanActivate {
-
   constructor(private authService:AuthServiceService) {
     
   }
+  ngOnInit(){
 
+  }
+    isUserLoggedIn:boolean= false
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean | UrlTree | Observable<boolean | UrlTree> | Promise<boolean | UrlTree> {
-    return this.authService.isUserLoggedIn
+    let userData = localStorage.getItem('user');
+    if(userData){
+      this.isUserLoggedIn = true;
+    }
+    return this.isUserLoggedIn;
+
   }
 }

@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
         const username = user && JSON.parse(user).username
         this.username = username
         this.userLoggedIn = true;
-        
+
       }
     })
 
@@ -30,5 +30,6 @@ export class HeaderComponent implements OnInit {
     localStorage.removeItem('user');
     this.router.navigate(['user-auth']);
     this.userLoggedIn = false;
+    // this.userAuthService.isUserLoggedIn = false
   }
 }
