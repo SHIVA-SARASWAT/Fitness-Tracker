@@ -1,0 +1,11 @@
+  <nav class="navbar">
+    <div class="container">
+      <div class="brand">Fitness Tracker</div>
+      <div class="nav-links" style="display: flex;gap: 30px;">
+        <a *ngIf="!userLoggedIn" routerLink="user-auth" class="login">Login/Signup</a>
+        <a *ngIf="userLoggedIn" class="signup">{{username}}</a>
+        <a *ngIf="userLoggedIn" class="Training" routerLink="exercise-module">Training</a>
+        <a *ngIf="userLoggedIn" class="Logout" (click)="onClickLogout()">Logout</a>
+      </div>
+    </div>
+  </nav>

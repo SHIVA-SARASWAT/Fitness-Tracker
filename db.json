@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "id": "9131",
+      "username": "saraswat.shiva2001@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "a4fb",
+      "Name": "Shiva",
+      "username": "saraswat.shiva2001@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "bb11",
+      "Name": "Shiva",
+      "username": "saraswat.shiva2001@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "6213",
+      "Name": "Shiva",
+      "username": "shiva_saraswat19",
+      "password": "123456"
+    }
+  ],
+  "exercise": [
+    {
+      "id": "20fc",
+      "exercise": "Pushups",
+      "duration": 2,
+      "state": "uncomplete",
+      "date": "2024-04-25T05:16:38.118Z",
+      "calories": 0.3266
+    },
+    {
+      "id": "1460",
+      "exercise": "Touch Toes",
+      "duration": 30,
+      "state": "complete",
+      "date": "2024-04-25T05:17:38.035Z",
+      "calories": 4.899
+    },
+    {
+      "id": "1231",
+      "exercise": "Planks",
+      "duration": 7,
+      "state": "uncomplete",
+      "date": "2024-04-25T05:27:07.365Z",
+      "calories": 1.1431
+    },
+    {
+      "id": "3046",
+      "exercise": "Lunges",
+      "duration": 30,
+      "state": "complete",
+      "date": "2024-04-25T05:27:39.269Z",
+      "calories": 4.899
+    }
+  ]
+}

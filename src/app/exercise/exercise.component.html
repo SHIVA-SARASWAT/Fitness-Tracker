@@ -1,0 +1,54 @@
+<div class="navbar">
+    <div class="navbar-left" style="padding: 20px;" (click)="onSelectExercisetype('new')"
+        [class.selected]="selectedExerciseType ==='new'">
+        <a>New Exercise</a>
+    </div>
+    <div class="navbar-right" style="padding: 20px;" (click)="onSelectExercisetype('past')"
+        [class.selected]="selectedExerciseType ==='past'">
+        <a>Past Exercise</a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="exercise-section" *ngIf="selectedExerciseType === 'new'">
+        <div class="form-group">
+            <p>{{contentAfterCompletion}}</p>
+            <label for="newExercise">Select type of training *</label>
+            <select id="newExercise" name="newExercise" [(ngModel)]="selectedExercise">
+                <option value="Touch Toes">Touch Toes</option>
+                <option value="Lunges">Lunges</option>
+                <option value="Pushups">Pushups</option>
+                <option value="Side Lunges">Side Lunges</option>
+                <option value="Planks">Planks</option>
+            </select>
+        </div>
+        <button class="start-button" (click)="onClickStart()" [disabled]="isLoading || exerciseInProgress">Start</button>
+        <div class="loading-indicator" *ngIf="isLoading">Loading...</div>
+        <button class="cancel-button" *ngIf="exerciseInProgress" (click)="onCancelExercise()">Cancel Exercise</button>
+    </div>
+    
+    <div class="past-exercise" *ngIf="selectedExerciseType === 'past'">
+        <h2>Past Exercises</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Exercise</th>
+                    <th>Duration</th>
+                    <th>Calories</th>
+                    <th>State</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let exercise of completedExerciseDetails">
+                    <td>{{exercise.date | date:'yyyy/MM/dd h:mm:ss a'}}</td>
+                    <td>{{exercise.exercise}}</td>
+                    <td>{{exercise.duration}}</td>
+                    <td>{{exercise.calories}} Calories</td>
+                    <td [class.incomplete]="exercise.state === 'uncomplete'">{{exercise.state}}</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+</div>

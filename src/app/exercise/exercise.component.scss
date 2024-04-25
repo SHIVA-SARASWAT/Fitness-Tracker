@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  .start-button, .cancel-button {
+    padding: 8px 16px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .start-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  
+  .cancel-button {
+    background-color: #f44336; /* Red */
+    color: white;
+  }
+  
+  .loading-indicator {
+    margin-top: 10px;
+    font-style: italic;
+    color: #777;
+  }
+  
+  .container {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .start-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .start-button:hover {
+    background-color: #45a049; /* Darker Green */
+  }
+  
+  .start-button:active {
+    background-color: #3e8e41; /* On Click Green */
+  }
+  
+  .exercise-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 20px);
+  }
+  .exercise-section h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .form-group select,
+  .form-group input[type="text"],
+  .form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="#333" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 30px;
+  }
+  .form-group button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .form-group button:hover {
+    background-color: #0056b3;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(202, 198, 198);
+    color: rgb(58, 57, 57);
+    font-size: 20px;
+  }
+  
+  .navbar-left a {
+    color: rgb(72, 65, 65);
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .navbar-left a:hover {
+    color: #0e0d0d;
+  }
+  
+  /* You can add more styling for the right side of the navbar if needed */
+  .selected {
+    border-bottom: 2px solid blue;
+  }
+  .past-exercise {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    width: 100%;
+    margin: auto
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%; /* Change to 100% to occupy the full width */
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  thead th {
+    background-color: #f2f2f2;
+  }
+  
+  tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  tbody td:last-child {
+    color: #0F9D58;
+  }
+  
+  
+  tbody td:last-child:not(:last-child):after {
+    color: #DB4437;
+  }
+  
+  /* Styling for even and odd rows */
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  .incomplete{
+    color: red!important;
+  }
+  
